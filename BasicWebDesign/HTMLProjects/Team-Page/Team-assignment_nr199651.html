@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team Members</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Ruiz">
+
+    <style>
+      body {
+        background-image: url('images/Background.jpg');
+        background-size: cover;
+        background-repeat: repeat-x;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+      }
+
+      .org-info{
+        background-color: white;
+        width: 900px;
+        height: 1000px;
+        border-radius: 3px;
+        margin: 20px auto;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+        border: 5px solid;
+        border-color: black;
+        border-radius: 5px;
+      }
+      .Members-bio{
+        background-color: white;
+        width: 900px;
+        height: 1000px;
+        border-radius: 3px;
+        margin: 20px auto;
+        border: 5px solid;
+        border-color: black;
+        border-radius: 5px;
+      }
+      h4 {
+        text-align: center;
+        font-size: x-large;
+      }
+      hr {
+        height: 5px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.329);
+        border-radius: 10px;
+        margin: 0px 50px;
+      }
+      #navigation-bar{
+        background-color: #324853;
+        width: 100%;
+        height: 75px;
+        position: fixed;
+
+      }
+      header{
+        width: 100%;
+      }
+      nav{
+        margin-left: 20px;
+      }
+      .shortcut{
+        font-size: 26px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 20px;
+        display: inline-block;
+        margin-top: 5px;
+        color: rgba(255, 255, 255, 0.76);
+      }
+      .logo{
+        height: 70px;
+        width: 70px;
+        display: inline;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        margin-right: 55px;
+      }
+      .org-info p{
+        padding: 15px;
+        margin-left: 28px;
+      }
+      .image-container{
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow:hidden;
+      }
+      .image-container p{
+        margin: 0 0 0 20px;
+        padding: 5px 10px;
+      }
+      .image-container img{
+        width: 170px;
+        height: 170px;
+        margin-bottom: 10px;
+        border: 5px solid rgb(133, 136, 127);
+      }
+      .odd{
+        float: left;
+        margin-right: 20px;
+        margin-left: 200px;
+      }
+      .even{
+        float: right;
+        margin-left: 20px;
+        text-align: right;
+        margin-right: 200px;
+      }
+      .org-info::after{
+        clear: both;
+        display: table;
+        content: "";
+      }
+      .chest{
+        float: right;
+        height: 180px;
+        width: 320px;
+        margin-top: 20px;
+        margin-right: 26px;
+      }
+      .map{
+        float: right;
+        margin-top: 60px;
+        margin-right: 100px;
+      }
+    </style>
+
+  </head>
+  <header>
+    <!--Navagation-->
+    <div id="navigation-bar" style="overflow: hidden; z-index: 300;" >
+      <nav>
+        <a class="shortcut" href="#top" style="color: #964B00;">Back to Top</a>
+        <p style="display: inline; visibility: hidden;">| MEMBERS:</p>
+        <a class="shortcut" href="#cookie">Cookie</a>
+        <a class="shortcut" href="#pickles">Pickles</a>
+        <a class="shortcut" href="#coconut">Pirate Coconut</a>
+        <a class="shortcut" href="#garfield">Ugly Garfield</a>
+      </nav>
+      <img src="images/Coconut-Crusaders.png" class="logo" alt="Coconut Crusaders logo">
+      <div style="clear: both;"></div>
+    </div>
+  </header>
+  <body>
+    <!--First Page-->
+    <div class="org-info">
+      <a name="top"></a>
+      <h4><u><b>[ORGANIZATION]</b></u></h4>
+      <hr>
+      <p>The<b style="color: #964B00;"> Coconut Crusaders</b> are a rouge group of treasure hunters lead by <a href="#">Coconut Pirate</a>. Their final goal? To find the treasure of Captain Hook,
+      from over 300 years ago.
+    </p>
+      <img src="images/Treasure.jpg" class="chest" alt="Picture of a open treasure chest">
+    <p>
+      <br style="margin-top: 30px;">To find the treasure left behind by Caption Hook, you would need to find 4 pieces of a compass that leads you to the island hidden from any modern map.
+      The Coconut Crusaders currently own 2 pieces and another piece held by their rivals the <b style="color: red;">Red Lobsters</b>. The last piece? Well its speculated to be at the final 
+      of the five legendary pirates hidden treasure <b>Gol D. Roger</b>.
+    </p>
+    <p>
+      <br style="margin-top: 40px;">The Coconut Crusaders biggest haul was the Sunked Ship of the lost pirate <b>White Beard</b>. Hauling in $250,000 dollars in golden dabloons and not
+      including other treasures the crew kept for themselves. The crew these days, are currently lazying around planning their next treasure hunt. White Beard's Island was anything impressive
+      , but don't let that fool you. It was the most dangerous treasure hunt they went on so far.
+      <img src="images/Treasure-Map.png" class="map" alt="Picture of a treasure map(White Beard's Island)">
+    </p>
+      
+    </div>
+
+    <!--Second Page-->
+    <div class="Members-bio">
+      <h4><u><b>[TEAM MEMBERS]</b></u></h4>
+        <!--Coconut image-->
+        <a name="coconut"></a>
+        <div class="image-container">
+          <img src="images/Coconut.jpg" class="odd" alt="Picture of a Coconut Pirate missing his left eye.">
+          <p>
+            <a href="#">Coconut Pirate</a> is the leader, though he might not be the smartest, he always leads them to the right choice
+          </p>
+        </div>
+  
+        <!--Cookie image-->
+        <a name="cookie"></a>
+        <div class="image-container">
+          <img src="images/Cookie.jpg" class="even" alt="Picture of a Dog being very sleepy">
+          <p>
+            <a href="#">Cookie</a> is the lazy one of the group and LOVES to sleep, but always keeps everyone together and calm
+          </p>
+        </div>
+  
+        <!--Garfield image-->
+        <a name="garfield"></a>
+        <div class="image-container">
+          <img src="images/Garfield.jpg" class="odd" alt="Picture of a very ulgy stuff animal of Garfield">
+          <p>
+            <a href="#">Ugly Garfield</a> is a very serious and greedy, his greed is the main reason the crew gets into trouble and bad situations
+          </p>
+        </div>
+  
+        <!--Pickles image-->
+        <a name="pickles"></a>
+        <div class="image-container">
+          <img src="images/Pickles.jpg" class="even" alt="Pictuer of a black and white dog">
+          <p>
+            <a href="#">Pickles</a> is the brains of the crew, crafting all the plans, leading the crew to success, even in the hardest times always keeping a cool head
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
