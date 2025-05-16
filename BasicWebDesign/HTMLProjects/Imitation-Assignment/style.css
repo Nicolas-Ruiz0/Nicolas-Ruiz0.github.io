@@ -17,7 +17,7 @@
 .football-field-image{ /*Image Two*/
   filter: grayscale(100%);
   border: 48px solid #000;
-  border-image: url('/HTMLProjects/Imitation-Assignment/images/tic-tac-toe.png') 48 round;
+  border-image: url('images/tic-tac-toe.png') 48 round;
 }
 .dinosaur-image{ /*Image Three*/
   filter: drop-shadow(9px 1px 3px #000) hue-rotate(90deg);
