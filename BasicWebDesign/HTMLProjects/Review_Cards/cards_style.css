@@ -1,0 +1,91 @@
+body p h1 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/*Text Stlying*/
+.question {
+  opacity: 1;
+  text-align: center;
+}
+.answer {
+  opacity: 0; 
+  text-decoration: underline; 
+  transform: scaleX(-1);
+  text-align: center;
+}
+.header{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(82, 1, 82);
+}
+
+/*Card Styling*/
+.card_container {
+  display: grid;
+  width: 150vh;
+  height: auto;
+  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.review_card{
+  width: 250px;
+  height: 300px;
+  border: 3px solid rgb(82, 1, 82);
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+}
+.review_card p{
+  position: relative;
+  top: -40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*I don't know what to call this*/
+.review_card:focus{
+  animation: turnAround 0.5s ease-in 0s 1 normal forwards;
+}
+.review_card:focus .question{
+  animation: fadeQuestion 1s ease-in 0s 1 normal forwards;
+}
+.review_card:focus .answer{
+  animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+/* Animation for the card flip */
+@keyframes turnAround {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes fadeQuestion {
+  0%   { opacity: 1; }
+  20% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
+}
